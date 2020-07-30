@@ -8,13 +8,14 @@ class EmpWageUC3 {
 
 		double empCheck = Math.floor(Math.random() * 10) % 3;
 		if (empCheck == IS_FULL_TIME)
-		{
 			empHrs = 8;
-		}if(empCheck == IS_PART_TIME){
+
+		else if(empCheck == IS_PART_TIME)
 			empHrs = 4;
-		}else{
+
+		else
 			empHrs = 0;
-		}
+
 		empWage = empHrs * empRatePerHr;
 		System.out.println("Employee Wage : " + empWage);
 	}
